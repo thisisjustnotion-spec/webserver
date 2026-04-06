@@ -70,6 +70,13 @@ if __name__ == "__main__":
         
         # 프로그램 유지
         sio.wait()
-        
+    except KeyboardInterrupt:
+        print("\n🛑 사용자에 의해 프로그램이 중단되었습니다.")
     except Exception as e:
         print("❌ 연결 실패:", e)
+    finally:
+        if cap.isOpened():
+            cap.release()
+            print("📷 웹캠 자원이 해제되었습니다.")
+        cv2.destroyAllWindows()
+        print("🏁 프로그램을 종료합니다.")
