@@ -38,6 +38,9 @@ if __name__ == "__main__":
         threading.Thread(target=gpio_input_simulator, daemon=True).start()
         
         sio.wait()
-        
+    except KeyboardInterrupt:
+        print("\n🛑 사용자에 의해 프로그램이 중단되었습니다.")
     except Exception as e:
         print("❌ [GPIO] 연결 실패:", e)
+    finally:
+        print("🏁 프로그램을 종료합니다.")
