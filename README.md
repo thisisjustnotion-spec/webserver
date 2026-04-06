@@ -2,7 +2,7 @@
 2. python 설치하기 (https://www.python.org/downloads/release/python-3910/)
 3. pip install python-socketio opencv-python numpy ultralytics
 4. 해당 github 설치 및 압축 풀기
-5. webserver 폴더 안에서 터미널 열기 (vscode를 사용 중이라면 vscode에서 폴더 열기로 webserver를 선택하고 터미널 열기)
+5. webserver-main 폴더 안에서 터미널 열기 (vscode를 사용 중이라면 vscode에서 폴더 열기로 webserver를 선택하고 터미널 열기)
 6. npm init -y
 7. npm install express socket.io
 8. 터미널 총 3개 열기 (웹서버, 인공지능+gpio출력, gpio 입력)
