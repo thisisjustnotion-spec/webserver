@@ -6,4 +6,4 @@
 6. npm init -y
 7. npm install express socket.io
 8. 터미널 총 3개 열기 (웹서버, 인공지능+gpio출력, gpio 입력)
-9. node server.js / python AI.py / python gpio_input.py 각각 터미널에 입력하기
+9. node server.js / python AI.py / python gpio_input.py 각각 터미널에 입력하기 (만약에 웹캠으로 돌아가도록 테스트하고 싶으면 AI.py 대신 AI_Webcam.py로 하면 됨. 대신 이건 내가 아직 테스트 못 해봐서 웹캠 연결하고 실제 테스트 필요)
